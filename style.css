@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+  }
+  
+  body { 
+      font-family: sans-serif;
+      color: #fff;
+      background: #444;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    margin: 0 0 0 4px;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  
+  ul.piano {
+      list-style: none;
+      margin:0;
+      padding:0;
+    position: absolute;
+    width:100%;
+    height:100%;
+  }
+  
+  .piano li {
+      position: relative;
+      display: inline-block; 
+      width: 6.67%; 
+      height: 70%;
+      margin-right: -5px;
+  }
+  
+  .piano div { 
+      width: 100%; 
+      height: 100%;
+      background: #ffc;
+      background: linear-gradient(45deg, #ffe,#fff);
+      color: #000;
+      display: block;
+      text-align: center;
+      border: 1px solid #876;
+    cursor: pointer;
+  }
+  
+  .piano div:active {
+      background: #eee;
+      background: linear-gradient(45deg, #ddc, #ddd);
+  }
+  
+  li.b:after {
+      cursor: pointer;
+      position: absolute;
+      top: 0px;
+      z-index: 10;
+      left: 75%;
+      width: 50%;
+      height: 66%;
+      background: #332;
+    background: linear-gradient(225deg, #332,#000);
+      content: '';
+      border-radius: 0 0 4px 4px;
+  }
+  
